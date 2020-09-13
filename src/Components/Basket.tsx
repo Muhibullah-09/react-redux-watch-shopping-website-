@@ -38,7 +38,7 @@ function Basket() {
                           Odio delectus quasi vero ullam laudantium consectetur doloremque mollitia,
                           sunt, magnam temporibus quas neque nihil nam placeat
                               perspiciatis culpa ducimus asperiores saepe.</p>
-                          <p className="text-success priceInc" >${prods.price * prods.quantity}</p>
+                          <p className="text-success priceInc" >$ {prods.price * prods.quantity}</p>
                           <div className="beside1">
                             <button type="button" className="btn btn-outline-dark" onClick={() => dispatch(increment(prods))}>+</button>
                             <p className="text-secondary">{prods.quantity}</p>
@@ -46,7 +46,7 @@ function Basket() {
                           </div>
                         </div>
                         <div className="row justify-content-center mt-5">
-                          <button type="button" className="btn btn-outline-dark" onClick={() => dispatch(clear(prods))}>All Remove</button>
+                          <button type="button" className="btn btn-outline-dark" onClick={() => dispatch(clear(prods))}>Remove Item</button>
                         </div>
                       </div>
                     </div>
@@ -55,7 +55,7 @@ function Basket() {
               ))}
             </div>
             <div className="row justify-content-center mt-5">
-              <h4>TOTAL:{baskets.reduce((total, nextItem) => total + (nextItem.price) * nextItem.quantity, 0)}</h4>
+              <h4>TOTAL: {baskets.reduce((total, nextItem) => total + (nextItem.price) * nextItem.quantity, 0)}</h4>
             </div>
           </>
         )}
