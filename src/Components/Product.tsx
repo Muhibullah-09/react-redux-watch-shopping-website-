@@ -13,7 +13,7 @@ function Product() {
         <div className="card-body">
           <h5 className="card-title">{prod.name}</h5>
           <div className="beside">
-            <p className="card-text"><strong>${prod.price}</strong></p>
+            <p className="card-text"><strong>$ {prod.price}</strong></p>
             <p>
               <i className="fa fa-plus-circle" aria-hidden="true" onClick={() => dispatch(add(prod))}></i>
             </p>
