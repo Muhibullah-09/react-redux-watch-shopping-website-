@@ -29,7 +29,7 @@ function Basket() {
                       <div className="col-md-6" >
                         <img src={prods.img} width="300px" height="300px" alt={prods.name} />
                         <h4 className="text-secondary">{prods.name}</h4>
-                        <p className="text-dark">${prods.price}</p>
+                        <p className="text-dark">$ {prods.price}</p>
                       </div>
                       <div className="col-md-6">
                         <div className="transaction">
@@ -46,7 +46,7 @@ function Basket() {
                           </div>
                         </div>
                         <div className="row justify-content-center mt-5">
-                          <button type="button" className="btn btn-outline-dark" onClick={() => dispatch(clear(prods))}>Remove Item</button>
+                          <button type="button" className="btn btn-outline-dark" onClick={() => dispatch(clear(prods))}>Remove All</button>
                         </div>
                       </div>
                     </div>
