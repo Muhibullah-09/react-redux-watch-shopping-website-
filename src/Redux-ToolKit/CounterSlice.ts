@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { initialState } from "./Shoes";
+import { initialState } from "./Watches";
 
 export const counterSlice = createSlice({
   name: "Basket",

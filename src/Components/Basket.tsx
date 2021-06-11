@@ -1,6 +1,6 @@
 import React from 'react';
 import './Style.css';
-import { productType } from '../Redux-ToolKit/Shoes';
+import { productType } from '../Redux-ToolKit/Watches';
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import { increment, clear, decrement } from '../Redux-ToolKit/CounterSlice';

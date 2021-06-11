@@ -1,7 +1,7 @@
 import React from 'react';
 import './Style.css';
 import { Link } from 'react-router-dom';
-import { productType } from '../Redux-ToolKit/Shoes'
+import { productType } from '../Redux-ToolKit/Watches'
 import { useSelector } from 'react-redux';
 
 function Navbar() {

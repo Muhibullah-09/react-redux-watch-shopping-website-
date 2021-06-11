@@ -17,7 +17,7 @@ function Home() {
           </div>
         </div>
         <div className="col-md-6 col-6 col-sm-12 col-lg-6 imageCenter">
-          <img src='https://i.gifer.com/Dmxv.gif' alt="watch" className="mr-5" />
+          <img src='https://i.gifer.com/Dmxv.gif' alt="watch"  />
         </div>
       </div><br /><hr />
       <Product />
