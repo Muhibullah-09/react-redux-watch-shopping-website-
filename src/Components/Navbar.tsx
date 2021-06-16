@@ -28,11 +28,11 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="close">
+        {/* <div className="close">
           <button type="button" className="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-        </div>
+        </div> */}
         <div className={valNav} id="navbarText">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
