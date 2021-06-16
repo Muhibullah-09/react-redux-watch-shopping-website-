@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Modak&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ /* .col-6 {
+  flex: none!important;
+  max-width:none !important;
+} */
+#navbarText{
+  margin-right: 100px;
+}
+.navbar {
+  position: fixed !important;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 25px !important;
+}
+.fa-shopping-cart {
+  font-size: 20px !important;
+  color: black !important;
+  margin-right: 10px;
+}
+.fa-shopping-cart:hover {
+  font-size: 24px !important;
+  color: red !important;
+  margin-right: 10px;
+}
+.nav-link {
+  margin-right: 5px !important;
+  color: black !important;
+  text-decoration: none !important ;
+  font-weight: 400;
+  font-size: large;
+}
+.nav-link:hover {
+  margin-right: 5px !important;
+  color: rgb(165, 165, 165) !important;
+  text-decoration: none !important ;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Product */
+/* Cart or Basket */
+.cartEmpty,
+h4 {
+  font-family: "Aclonica", sans-serif;
+}
+.cart-empty {
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* Home */
+.center {
+  margin-top: 150px !important;
+  /* margin-left: 100px !important; */
+}
+.imageCenter {
+  margin-top: 50px !important;
+}
+.fa-plus-circle {
+  font-size: 25px !important;
+  color: royalblue !important;
+  cursor: pointer;
+}
+
+.fa-paper-plane {
+  font-size: 25px !important;
+  margin-right: 10px !important;
+  color: greenyellow;
+}
+/* Footer
+.footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+}
+.footer > p {
+  margin-top: 10px;
+  font-family: "Aclonica", sans-serif;
+  font-size: 15px;
+  text-align: center;
+} */
+
+.beside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.beside1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box {
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 1000px ;
+  /* height: 400px !important; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.box1 {
+  margin-bottom: 100px;
+}
+
+.priceInc {
+  font-size: 35px !important;
+  font-family: "Aclonica", sans-serif;
+  font-weight: bold;
+}
+.transaction {
+  margin-top: 30px !important;
+}
+
+@media (min-width: 1200px) {
+  /* Home */
+  .homeProduct {
+    font-size: 40px;
+  }
+  .imageCenter img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Home */
+  .homeProduct {
+    width: 100%;
+    font-size: 35px;
+  }
+  .imageCenter img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    flex: none!important;
+    max-width:none !important;
+}
+  /* Home */
+  .homeProduct {
+    width: 100%;
+    font-size: 35px;
+
+  }
+  .imageCenter img {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /* Home */
+  .col-6 {
+    flex: none!important;
+    max-width:none !important;
+  }
+  .homeProduct {
+    width: 100;
+    font-size: 35px;
+  }
+  .imageCenter img {
+    width: 100%;
+  }
+  .box {
+    text-align: center;
+    width: 100%;
+  }
+  .box img{
+    width: 100%;
+  }
+}
+

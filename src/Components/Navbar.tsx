@@ -3,30 +3,39 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { productType } from "../Redux-ToolKit/Watches";
 import { useSelector } from "react-redux";
-// import styles from './Style.css';
+import { useState } from "react";
+// import styles from './Style.module.css';
+// var changeClass = "collapse navbar-collapse";
 
 function Navbar() {
   const count = useSelector((state: productType[]) => state);
   const totalItem = count.filter((product) => product.added).length;
-
-  const ChangeNav:any = () => {
-    console.log('Clicked');
-    
-  }
-
+  const [valNav, setValNav] = useState("collapse navbar-collapse");
+  const ChangeNav: any = () => {
+    setValNav("navbar-collapse");
+    // console.log('Clicked');
+  };
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="/">
           Watch Store
         </a>
-        <button className="navbar-toggler" type="button" onClick = {() => ChangeNav()} 
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={() => ChangeNav()}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarText">
+        <div className="close">
+          <button type="button" className="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div className={valNav} id="navbarText">
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home
               </Link>
