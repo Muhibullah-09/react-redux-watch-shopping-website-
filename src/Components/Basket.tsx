@@ -38,7 +38,7 @@ function Basket() {
                   <>
                     <div className="row " >
                       <div className="box">
-                        <div className="col-md-6" key={ind}>
+                        <div className="col-md-6" >
                           <img
                             src={prods.img}
                             width="300px"
