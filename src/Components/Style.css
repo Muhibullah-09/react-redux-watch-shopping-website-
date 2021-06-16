@@ -9,6 +9,19 @@
   flex: none!important;
   max-width:none !important;
 } */
+
+/* Close Button */
+.close {
+  display: none;
+}
+.closeBtn {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  /* left: 0; */
+  /* margin: 5px; */
+}
 #navbarText{
   margin-right: 100px;
 }
@@ -47,7 +60,9 @@
   font-weight: bold;
   font-size: 15px;
 }
-
+.navbar-light  .navbar-toggler {
+  border: none !important;
+}
 /* Product */
 /* Cart or Basket */
 .cartEmpty,

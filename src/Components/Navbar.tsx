@@ -11,9 +11,20 @@ function Navbar() {
   const count = useSelector((state: productType[]) => state);
   const totalItem = count.filter((product) => product.added).length;
   const [valNav, setValNav] = useState("collapse navbar-collapse");
+  const [closeVal, setCloseVal] = useState("close");
+  const [changeBtn, setChangeBtn] = useState("navbar-toggler");
+
   const ChangeNav: any = () => {
     setValNav("navbar-collapse");
     // console.log('Clicked');
+    setCloseVal("closeBtn");
+    setChangeBtn("close");
+  };
+
+  const CloseNav: any = () => {
+    // console.log("Close Button Clicked...");
+    setChangeBtn("navbar-toggler");
+    setValNav("collapse navbar-collapse")
   };
   return (
     <div>
@@ -22,18 +33,23 @@ function Navbar() {
           Watch Store
         </a>
         <button
-          className="navbar-toggler"
+          className={changeBtn}
           type="button"
           onClick={() => ChangeNav()}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/* <div className="close">
-          <button type="button" className="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div> */}
         <div className={valNav} id="navbarText">
+          <div className={closeVal}>
+            <button
+              type="button"
+              className="closeNav"
+              onClick={() => CloseNav()}
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link">
