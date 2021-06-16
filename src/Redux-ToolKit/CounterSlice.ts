@@ -55,17 +55,15 @@ export const counterSlice = createSlice({
             ...item,
             quantity:item.quantity+1
         }
-        
         })
     },
     decrement: (state,action) =>{
       return state.map((item)=>{
           if(item.id !== action.payload.id)
           return item
-      
       return{
           ...item,
-          quantity:item.quantity-1
+          quantity:item.quantity > 0 ? item.quantity - 1 : 0 
       } 
       })
   }
